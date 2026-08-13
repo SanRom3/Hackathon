@@ -333,7 +333,7 @@ def main() -> None:
     with st.sidebar:
         st.header("Entrada del estudio")
         uploaded = st.file_uploader("Subir PDF", type=["pdf"], help=f"Máximo {MAX_UPLOAD_MB} MB.")
-        link = st.text_input("o pega DOI, PMID o enlace a PDF", placeholder="10.1000/ejemplo o https://…")
+        link = st.text_input("pega DOI, PMID o enlace a PDF", placeholder="10.1000/ejemplo o https://…")
         if LLM_ENABLED:
             st.success("Síntesis asistida por API: configurada")
         else:
