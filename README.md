@@ -41,16 +41,6 @@ Copy-Item .env.example .env
 notepad .env
 ```
 
-Complete los tres valores según el proveedor de su API compatible con OpenAI:
-
-```dotenv
-LLM_API_KEY=PEGUE_AQUI_SU_CLAVE_PRIVADA
-LLM_BASE_URL=https://api.openai.com/v1
-LLM_MODEL=gpt-4o-mini
-```
-
-Mantenga `.env` exclusivamente en su equipo: no lo adjunte a entregas, no lo publique en repositorios y rótelo en el proveedor si cree que se ha expuesto. Si su proveedor usa otro endpoint o nombre de modelo, reemplace `LLM_BASE_URL` y `LLM_MODEL` por los que indique su documentación oficial.
-
 ## 3. Iniciar la aplicación
 
 Con el entorno virtual activo, ejecute:
